@@ -79,17 +79,17 @@
 
 
 
-<meta name="description" content="Php语法 php语法都包括在这个标签包裹着    123&amp;lt;?php         ....?&amp;gt;     echo 输出函数 相当于printf    echo ‘part 1’ . $_POST[‘name’]  . ‘‘ //点号 . 相当于将串和变量连接在一起每一句语句必须用分号 ; 结束PHP变量名是用 $ 开头  $_POST传送表单数据若表单action是这个xxx.ph">
+<meta name="description" content="Php语法Php代码是在服务器上运行的,并转换成HTML代码发送给浏览器">
 <meta property="og:type" content="article">
 <meta property="og:title" content="世界上最好的语言-Php">
 <meta property="og:url" content="http://yoursite.com/2018/04/18/世界上最好的语言-Php/index.html">
 <meta property="og:site_name" content="萧波波">
-<meta property="og:description" content="Php语法 php语法都包括在这个标签包裹着    123&amp;lt;?php         ....?&amp;gt;     echo 输出函数 相当于printf    echo ‘part 1’ . $_POST[‘name’]  . ‘‘ //点号 . 相当于将串和变量连接在一起每一句语句必须用分号 ; 结束PHP变量名是用 $ 开头  $_POST传送表单数据若表单action是这个xxx.ph">
+<meta property="og:description" content="Php语法Php代码是在服务器上运行的,并转换成HTML代码发送给浏览器">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2018-04-18T14:34:30.613Z">
+<meta property="og:updated_time" content="2018-04-18T16:02:29.017Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="世界上最好的语言-Php">
-<meta name="twitter:description" content="Php语法 php语法都包括在这个标签包裹着    123&amp;lt;?php         ....?&amp;gt;     echo 输出函数 相当于printf    echo ‘part 1’ . $_POST[‘name’]  . ‘‘ //点号 . 相当于将串和变量连接在一起每一句语句必须用分号 ; 结束PHP变量名是用 $ 开头  $_POST传送表单数据若表单action是这个xxx.ph">
+<meta name="twitter:description" content="Php语法Php代码是在服务器上运行的,并转换成HTML代码发送给浏览器">
 
 
 
@@ -299,17 +299,23 @@
       
 
       
-        <h2 id="Php语法"><a href="#Php语法" class="headerlink" title="Php语法"></a>Php语法</h2><blockquote>
+        <h2 id="Php语法"><a href="#Php语法" class="headerlink" title="Php语法"></a>Php语法</h2><pre><code>Php代码是在服务器上运行的,并转换成HTML代码发送给浏览器
+</code></pre><a id="more"></a>
+<blockquote>
 <p>php语法都包括在这个标签包裹着<br>    <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&lt;?php </span><br><span class="line">        ....</span><br><span class="line">?&gt;</span><br></pre></td></tr></table></figure></p>
 </blockquote>
 <blockquote>
-<p>  echo 输出函数 相当于printf<br>    echo ‘part 1’ . $_POST[‘name’]  . ‘<br>‘ //点号 . 相当于将串和变量连接在一起<br>每一句语句必须用分号 ; 结束<br>PHP变量名是用 $ 开头</p>
+<p>  echo 输出函数 相当于printf<br>    echo ‘part 1’ . $_POST[‘name’]  . ‘<br>‘ //点号 . 相当于将串和变量连接在一起<br>    类似于java 里 String st = “aaa” + “bbb”;<br>每一句语句必须用分号 ; 结束<br>PHP变量名是用 $ 开头</p>
 </blockquote>
 <h3 id="POST传送表单数据"><a href="#POST传送表单数据" class="headerlink" title="$_POST传送表单数据"></a>$_POST传送表单数据</h3><pre><code>若表单action是这个xxx.php那么在这个xxx.php文件里有个变量
 $_POST,这个变量存储这个表单所有的数据,例如
 有个 name=&quot;username&quot; 的&lt;input&gt; 标签
 那么在这个xxx.php要得到这个数据的话 $name = $_POST[&apos;username&apos;]
-</code></pre>
+</code></pre><h3 id="PHP中单引号和双引号的区别"><a href="#PHP中单引号和双引号的区别" class="headerlink" title="PHP中单引号和双引号的区别"></a>PHP中单引号和双引号的区别</h3><ul>
+<li>单引号被认为是原始文本  \n等转义字符不可用 只支持<br>\` \\这两种转义其他都要双引号内</li>
+<li>双引号处理时会寻找变量</li>
+</ul>
+
       
     </div>
     
@@ -455,7 +461,7 @@ $_POST,这个变量存储这个表单所有的数据,例如
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Php语法"><span class="nav-number">1.</span> <span class="nav-text">Php语法</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#POST传送表单数据"><span class="nav-number">1.1.</span> <span class="nav-text">$_POST传送表单数据</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Php语法"><span class="nav-number">1.</span> <span class="nav-text">Php语法</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#POST传送表单数据"><span class="nav-number">1.1.</span> <span class="nav-text">$_POST传送表单数据</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#PHP中单引号和双引号的区别"><span class="nav-number">1.2.</span> <span class="nav-text">PHP中单引号和双引号的区别</span></a></li></ol></li></ol></div>
             
 
           </div>
