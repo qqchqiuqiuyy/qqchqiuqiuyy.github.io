@@ -86,7 +86,7 @@
 <meta property="og:site_name" content="萧波波">
 <meta property="og:description" content="Php语法">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2018-04-20T02:22:01.196Z">
+<meta property="og:updated_time" content="2018-04-20T09:39:17.040Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="世界上最好的语言-Php">
 <meta name="twitter:description" content="Php语法">
@@ -316,7 +316,7 @@ $_POST,这个变量存储这个表单所有的数据,例如
 <li>双引号处理时会寻找变量<blockquote>
 <p>在 Apache安装路径\htdocs下 创建php文件</p>
 </blockquote>
-<h3 id="php连接数据库"><a href="#php连接数据库" class="headerlink" title="php连接数据库"></a>php连接数据库</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable">$dbc</span> = mysqli_connect(<span class="string">'localhost'</span>,<span class="string">'root'</span>,<span class="string">'2333'</span>,<span class="string">'php'</span>); //服务器\用户名\密码</span><br><span class="line"><span class="variable">$query</span> = <span class="string">"insert into users (name,pwd) values ('bobo','2333')"</span> ;</span><br><span class="line"><span class="variable">$result</span> = mysqli_query(<span class="variable">$dbc</span>,<span class="variable">$query</span>) or die(<span class="string">'error query'</span>); /</span><br><span class="line">/执行 若有错误就执行die里面</span><br><span class="line">mysqli_close(<span class="variable">$dbc</span>);  //关闭连接</span><br></pre></td></tr></table></figure>
+<h3 id="php连接数据库"><a href="#php连接数据库" class="headerlink" title="php连接数据库"></a>php连接数据库</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable">$dbc</span> = mysqli_connect(<span class="string">'localhost'</span>,<span class="string">'root'</span>,<span class="string">'2333'</span>,<span class="string">'php'</span>); //服务器\用户名\密码</span><br><span class="line"><span class="variable">$query</span> = <span class="string">"insert into users (name,pwd) values ('bobo','2333')"</span> ;</span><br><span class="line"><span class="variable">$result</span> = mysqli_query(<span class="variable">$dbc</span>,<span class="variable">$query</span>) or die(<span class="string">'error query'</span>);</span><br><span class="line"> //执行 若有错误就执行die里面,储存着一个mysql资源的ID号</span><br><span class="line">mysqli_close(<span class="variable">$dbc</span>);  //关闭连接</span><br></pre></td></tr></table></figure>
 </li>
 </ul>
 <blockquote>
@@ -327,7 +327,7 @@ $_POST,这个变量存储这个表单所有的数据,例如
 </code></pre>该方法需要在在$_POST 之间加上 ‘  “  .  $_POST[‘name’]     .     “   ‘</li>
 </ol>
 </blockquote>
-
+<h4 id="mysqli-fetch-array-方法"><a href="#mysqli-fetch-array-方法" class="headerlink" title="mysqli_fetch_array()方法"></a>mysqli_fetch_array()方法</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable">$query</span> = <span class="string">"select * from users"</span>;</span><br><span class="line"><span class="variable">$result</span> = <span class="variable">$mysqli_query</span>(<span class="variable">$dbc</span>,<span class="variable">$query</span>);</span><br><span class="line"><span class="variable">$row</span> = mysqli_fetch_array(<span class="variable">$result</span>) ;</span><br><span class="line">执行一次这个函数就从数据库中拿一条数据</span><br><span class="line">然后把数据封装到变量<span class="variable">$row</span>里面</span><br><span class="line">可以使用<span class="keyword">while</span>循环遍历</span><br><span class="line"><span class="keyword">while</span>(<span class="variable">$row</span> = mysqli_fetch_array(<span class="variable">$result</span>))&#123;</span><br><span class="line">    <span class="built_in">echo</span> <span class="string">'name'</span> .  <span class="variable">$row</span>[<span class="string">'name'</span>] ;</span><br><span class="line">    <span class="built_in">echo</span> <span class="string">'pwd'</span> . <span class="variable">$row</span>[<span class="string">'pwd'</span>];</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
       
     </div>
     
@@ -477,7 +477,7 @@ $_POST,这个变量存储这个表单所有的数据,例如
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Php语法"><span class="nav-number">1.</span> <span class="nav-text">Php语法</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#POST传送表单数据"><span class="nav-number">1.1.</span> <span class="nav-text">$_POST传送表单数据</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#PHP中单引号和双引号的区别"><span class="nav-number">1.2.</span> <span class="nav-text">PHP中单引号和双引号的区别</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#php连接数据库"><span class="nav-number">1.3.</span> <span class="nav-text">php连接数据库</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Php语法"><span class="nav-number">1.</span> <span class="nav-text">Php语法</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#POST传送表单数据"><span class="nav-number">1.1.</span> <span class="nav-text">$_POST传送表单数据</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#PHP中单引号和双引号的区别"><span class="nav-number">1.2.</span> <span class="nav-text">PHP中单引号和双引号的区别</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#php连接数据库"><span class="nav-number">1.3.</span> <span class="nav-text">php连接数据库</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#mysqli-fetch-array-方法"><span class="nav-number">1.3.1.</span> <span class="nav-text">mysqli_fetch_array()方法</span></a></li></ol></li></ol></li></ol></div>
             
 
           </div>
