@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>世界上最好的语言-Php | 萧波波</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="Php语法">
+<meta property="og:type" content="article">
+<meta property="og:title" content="世界上最好的语言-Php">
+<meta property="og:url" content="http://yoursite.com/2018/04/18/世界上最好的语言-Php/index.html">
+<meta property="og:site_name" content="萧波波">
+<meta property="og:description" content="Php语法">
+<meta property="og:locale" content="default">
+<meta property="og:updated_time" content="2018-04-24T08:32:15.454Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="世界上最好的语言-Php">
+<meta name="twitter:description" content="Php语法">
+  
+    <link rel="alternate" href="/atom.xml" title="萧波波" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  <link rel="stylesheet" href="/css/style.css">
+  
+
+</head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">萧波波</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://yoursite.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main"><article id="post-世界上最好的语言-Php" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2018/04/18/世界上最好的语言-Php/" class="article-date">
+  <time datetime="2018-04-18T12:51:38.000Z" itemprop="datePublished">2018-04-18</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      世界上最好的语言-Php
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="Php语法"><a href="#Php语法" class="headerlink" title="Php语法"></a>Php语法</h2><a id="more"></a>
+<pre><code>Php代码是在服务器上运行的,并转换成HTML代码发送给浏览器
+</code></pre><blockquote>
+<p>php语法都包括在这个标签包裹着<br>    <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&lt;?php </span><br><span class="line">        ....</span><br><span class="line">?&gt;</span><br></pre></td></tr></table></figure></p>
+</blockquote>
+<blockquote>
+<p>  echo 输出函数 相当于printf<br>    echo ‘part 1’ . $_POST[‘name’]  . ‘<br>‘ //点号 . 相当于将串和变量连接在一起<br>    类似于java 里 String st = “aaa” + “bbb”;<br>每一句语句必须用分号 ; 结束<br>PHP变量名是用 $ 开头<br>php中 if(0 == ‘’) 结果是true<br>    0和空串相等<br>empty(变量)函数 若是空则返回true<br>    isset(变量) 函数 如果这个变量还没有设置就返回true</p>
+</blockquote>
+<h3 id="定义一个常量define-函数"><a href="#定义一个常量define-函数" class="headerlink" title="定义一个常量define()函数"></a>定义一个常量define()函数</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">define(name,value,case_insensitive)</span><br><span class="line">name-&gt;必选,常量名</span><br><span class="line">value-&gt;必选,常量值</span><br><span class="line">case_insensitive-&gt;<span class="literal">true</span>则对常量名大小写不敏感,<span class="literal">false</span>则敏感</span><br></pre></td></tr></table></figure>
+<h3 id="共享脚本数据"><a href="#共享脚本数据" class="headerlink" title="共享脚本数据"></a>共享脚本数据</h3><blockquote>
+<p>如果一个宏定义需要所有的 .php文件都有的话<br>    将宏定义写在 a.php中 &lt;?php define(‘名称’,’数值’;)?&gt;<br>    b.php 和 c.php 只需要加上这个代码<br>    <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">require_once(<span class="string">'a.php'</span>);</span><br></pre></td></tr></table></figure></p>
+</blockquote>
+<p>当然也可以将数据库一些东西写在这个共享脚步上</p>
+<h3 id="time-函数"><a href="#time-函数" class="headerlink" title="time()函数"></a>time()函数</h3><p>返回当前时间的 Unix 时间戳，并格式化为日期<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">&lt;?php</span><br><span class="line"><span class="variable">$t</span>=time();</span><br><span class="line"><span class="built_in">echo</span>(<span class="variable">$t</span> . <span class="string">"&lt;br&gt;"</span>);</span><br><span class="line"><span class="built_in">echo</span>(date(<span class="string">"Y-m-d"</span>,<span class="variable">$t</span>)); // 之间的-和Y可以变化</span><br><span class="line">?&gt;</span><br><span class="line">---输出</span><br><span class="line">1524385289</span><br><span class="line">2018-04-22</span><br></pre></td></tr></table></figure></p>
+<h3 id="foreach函数"><a href="#foreach函数" class="headerlink" title="foreach函数"></a>foreach函数</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">foreach(数组 as 变量名)  这样就从数组中元素逐个赋值给变量名</span><br></pre></td></tr></table></figure>
+<h3 id="将一些复选框的值存入一个数组中"><a href="#将一些复选框的值存入一个数组中" class="headerlink" title="将一些复选框的值存入一个数组中"></a>将一些复选框的值存入一个数组中</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&lt;input <span class="built_in">type</span>=<span class="string">"checkbox"</span> value=<span class="string">" '. <span class="variable">$row</span>['id'].' "</span> name=<span class="string">"todelete[]"</span>&gt; </span><br><span class="line">这样value的值就存入这个todelete数组中 可以用<span class="variable">$_POST</span>取这个数组</span><br></pre></td></tr></table></figure>
+<h3 id="POST传送表单数据"><a href="#POST传送表单数据" class="headerlink" title="$_POST传送表单数据"></a>$_POST传送表单数据</h3><pre><code>若表单action是这个xxx.php那么在这个xxx.php文件里有个变量
+$_POST,这个变量存储这个表单所有的数据,例如
+有个 name=&quot;username&quot; 的&lt;input&gt; 标签
+那么在这个xxx.php要得到这个数据的话 $name = $_POST[&apos;username&apos;]
+</code></pre><h3 id="GET全局变量"><a href="#GET全局变量" class="headerlink" title="$_GET全局变量"></a>$_GET全局变量</h3><blockquote>
+<p>GET请求中 表单数据会自动作为脚本URL的一部分发送到表单处理脚本<br>与$_POST类似,使用$_GET数组可以访问各种表单数据</p>
+</blockquote>
+<h3 id="GET-POST区别"><a href="#GET-POST区别" class="headerlink" title="$_GET POST区别"></a>$_GET POST区别</h3><p>post请求只能从表单发出,而get请求可以打包为URL<br>如果页面没用用表单来启动脚本,那么他只能通过URL连接到别的<br>脚本,所以我们需要GET<br>区别<br>GET  |   一般用于数据获取,不会有服务器有什么改变,可以直接在URL中向服务器发送数据,只适用于少量的数据<br>POST|   用于向服务器发送数据,从而改变服务器状态,如数据库中插入数据,只能表单 </p>
+<h3 id="header-首部函数"><a href="#header-首部函数" class="headerlink" title="header()首部函数"></a>header()首部函数</h3><p>这个函数可以将首部从服务器发送到服务器,不过必须要在所有的HTML代码之前调用</p>
+<blockquote>
+<p>用header首部函数来实现用户验证<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">header(<span class="string">'WWW-Authenticate: Basic realm="My realm"'</span>);</span><br><span class="line"> header(<span class="string">'HTTP/1.0 401 Unauthorized'</span>);</span><br><span class="line">   <span class="built_in">exit</span> (<span class="string">'Text to send if user hits Cancel button'</span>); //按取消后弹出的信息</span><br></pre></td></tr></table></figure></p>
+</blockquote>
+<p>弹出的输入口令窗口可以用$_SERVER[‘PHP_AUTO_USER’] 和$_SERVER[‘PHP_AUTO_PW’]<br>来获取输入的密码之后再进行校正<br>为了增强代码复用性别的php文件可以在html开头前加上<br>require_once 包含这个文件这样这个文件也能用这一段代码了</p>
+<blockquote>
+<p>也可以重定向一个页面</p>
+</blockquote>
+<h3 id="SERVER"><a href="#SERVER" class="headerlink" title="$_SERVER"></a>$_SERVER</h3><blockquote>
+<p>是一个包含了诸如头信息(header)、路径(path)、以及脚本位置(script locations)等等信息的数组</p>
+<ul>
+<li>$_SERVER[‘PHP_SELF’]  当前执行脚本的文件名</li>
+</ul>
+</blockquote>
+<h3 id="上传文件"><a href="#上传文件" class="headerlink" title="上传文件"></a>上传文件</h3><blockquote>
+<p>表单上传后php会将文件储存在一个临时文件,如果要<br>改变存储位置的话 需要</p>
+</blockquote>
+<h4 id="move-uploaded-file-图像文件路径和文件名-目标文件位置"><a href="#move-uploaded-file-图像文件路径和文件名-目标文件位置" class="headerlink" title="move_uploaded_file(图像文件路径和文件名,目标文件位置)"></a>move_uploaded_file(图像文件路径和文件名,目标文件位置)</h4><ul>
+<li>第一个参数一般用$_FILES[‘photo’][‘tmp_name’]  临时文件路径</li>
+<li>第二个参数自己定义<h3 id="unlink-函数"><a href="#unlink-函数" class="headerlink" title="unlink()函数"></a>unlink()函数</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">unlink(filename,context)</span><br><span class="line">当上传文件失败的时候 需要从临时空间删除</span><br><span class="line">//filename必选,规定要删除的文件 可以用<span class="variable">$_FILES</span>[<span class="string">'xx'</span>][<span class="string">'tmp_name'</span>];</span><br><span class="line">//context可选</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<h3 id="抑制错误报告符号"><a href="#抑制错误报告符号" class="headerlink" title="抑制错误报告符号@"></a>抑制错误报告符号@</h3><p>可以在任何函数面前加个@ 这样就不会产生错误报告了</p>
+<h3 id="FILES"><a href="#FILES" class="headerlink" title="$_FILES"></a>$_FILES</h3><blockquote>
+<p>包含了上传文件的一些信息<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">&lt;input <span class="built_in">type</span>=<span class="string">"file"</span> name=<span class="string">"photo"</span>/&gt;</span><br><span class="line"><span class="variable">$_FILES</span>[<span class="string">'photo'</span>][<span class="string">'name'</span>] -&gt; 可以得到文件名</span><br><span class="line"><span class="variable">$_FILES</span>[<span class="string">'photo'</span>][<span class="string">'type'</span>] -&gt;上传文件的类型</span><br><span class="line"><span class="variable">$_FILES</span>[<span class="string">'photo'</span>][<span class="string">'size'</span>]-&gt;上传文件的大小(字节数)</span><br><span class="line"><span class="variable">$_FILES</span>[<span class="string">'myFile'</span>][<span class="string">'tmp_name'</span>] 变量指定上传到服务器后为文件赋予</span><br><span class="line">的临时名。这是存储在临时目录（由PHP指令upload_tmp_dir指定）中时所指定的文件名。</span><br></pre></td></tr></table></figure></p>
+</blockquote>
+<h3 id="PHP中单引号和双引号的区别"><a href="#PHP中单引号和双引号的区别" class="headerlink" title="PHP中单引号和双引号的区别"></a>PHP中单引号和双引号的区别</h3><ul>
+<li>单引号被认为是原始文本  \n等转义字符不可用 只支持<br>\`     \\这两种转义其他都要双引号内</li>
+<li>双引号处理时会寻找变量<blockquote>
+<p>在 Apache安装路径\htdocs下 创建php文件</p>
+</blockquote>
+<h3 id="php连接数据库"><a href="#php连接数据库" class="headerlink" title="php连接数据库"></a>php连接数据库</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable">$dbc</span> = mysqli_connect(<span class="string">'localhost'</span>,<span class="string">'root'</span>,<span class="string">'2333'</span>,<span class="string">'php'</span>); //服务器\用户名\密码</span><br><span class="line"><span class="variable">$query</span> = <span class="string">"insert into users (name,pwd) values ('bobo','2333')"</span> ;</span><br><span class="line"><span class="variable">$result</span> = mysqli_query(<span class="variable">$dbc</span>,<span class="variable">$query</span>) or die(<span class="string">'error query'</span>);</span><br><span class="line"> //执行 若有错误就执行die里面,储存着一个mysql资源的ID号</span><br><span class="line">mysqli_close(<span class="variable">$dbc</span>);  //关闭连接</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<blockquote>
+<p>若要获得从表单得到的数据 </p>
+<ol>
+<li>$name = $_POST[‘name’] ; $pwd = $_POST[‘pwd’]<br>  $query = “insert into users (name,pwd) values (‘$name’,’ $pwd’)” ;</li>
+<li>$query = “insert into users (name,pwd) values<pre><code>(&apos;&quot;. $_POST[&apos;name&apos;].&quot;&apos;,&apos;&quot;. $_POST[&apos;pwd&apos;].&quot;&apos;)&quot; ;
+</code></pre>该方法需要在在$_POST 之间加上 ‘  “  .  $_POST[‘name’]     .     “   ‘</li>
+</ol>
+</blockquote>
+<h4 id="mysqli-fetch-array-方法"><a href="#mysqli-fetch-array-方法" class="headerlink" title="mysqli_fetch_array()方法"></a>mysqli_fetch_array()方法</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable">$query</span> = <span class="string">"select * from users"</span>;</span><br><span class="line"><span class="variable">$result</span> = <span class="variable">$mysqli_query</span>(<span class="variable">$dbc</span>,<span class="variable">$query</span>);</span><br><span class="line"><span class="variable">$row</span> = mysqli_fetch_array(<span class="variable">$result</span>) ;</span><br><span class="line">执行一次这个函数就从数据库中拿一条数据</span><br><span class="line">然后把数据封装到变量<span class="variable">$row</span>里面</span><br><span class="line">可以使用<span class="keyword">while</span>循环遍历</span><br><span class="line"><span class="keyword">while</span>(<span class="variable">$row</span> = mysqli_fetch_array(<span class="variable">$result</span>))&#123;</span><br><span class="line">    <span class="built_in">echo</span> <span class="string">'name'</span> .  <span class="variable">$row</span>[<span class="string">'name'</span>] ;</span><br><span class="line">    <span class="built_in">echo</span> <span class="string">'pwd'</span> . <span class="variable">$row</span>[<span class="string">'pwd'</span>];</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2018/04/18/世界上最好的语言-Php/" data-id="cjgdn61qg00039kpzd8ftzdp8" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2018/04/19/mysql基本操作/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          mysql基本操作
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2018/04/16/Git一些操作和知识/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">Git一些操作和知识</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+
+  
+    
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/04/">April 2018</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2018/04/19/mysql基本操作/">mysql基本操作</a>
+          </li>
+        
+          <li>
+            <a href="/2018/04/18/世界上最好的语言-Php/">世界上最好的语言-Php</a>
+          </li>
+        
+          <li>
+            <a href="/2018/04/16/Git一些操作和知识/">Git一些操作和知识</a>
+          </li>
+        
+          <li>
+            <a href="/2018/04/16/markdown的一些语法/">markdown的一些语法</a>
+          </li>
+        
+          <li>
+            <a href="/2018/04/16/hello-world/">Hello World</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2018 Bobo<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  <script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/js/script.js"></script>
+
+  </div>
+</body>
+</html>
