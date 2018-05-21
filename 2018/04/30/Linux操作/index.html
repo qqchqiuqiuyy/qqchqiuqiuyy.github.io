@@ -87,7 +87,8 @@
 <meta property="og:description" content="Linux操作linux目录">
 <meta property="og:locale" content="default">
 <meta property="og:image" content="https://s1.ax1x.com/2018/05/21/C2dOte.jpg">
-<meta property="og:updated_time" content="2018-05-21T12:42:53.075Z">
+<meta property="og:image" content="https://s1.ax2x.com/2018/05/21/2HdpO.jpg">
+<meta property="og:updated_time" content="2018-05-21T14:50:31.363Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Linux操作">
 <meta name="twitter:description" content="Linux操作linux目录">
@@ -341,6 +342,26 @@
 <h2 id="top"><a href="#top" class="headerlink" title="top"></a>top</h2><blockquote>
 <p>任务管理器</p>
 </blockquote>
+<h2 id="shutdown-关机-root账号才能操作"><a href="#shutdown-关机-root账号才能操作" class="headerlink" title="shutdown 关机(root账号才能操作)"></a>shutdown 关机(root账号才能操作)</h2><h2 id="reboot-重启-root账号才能操作"><a href="#reboot-重启-root账号才能操作" class="headerlink" title="reboot 重启(root账号才能操作)"></a>reboot 重启(root账号才能操作)</h2><h2 id="history"><a href="#history" class="headerlink" title="history"></a>history</h2><blockquote>
+<p>可以查询所有操作过的命令<br> !标号 可以执行第n条命令</p>
+</blockquote>
+<h2 id="find"><a href="#find" class="headerlink" title="find"></a>find</h2><p>find 目录名 -name FIleName<br>例如find / -name hello.txt //在根目录/下找hello.txt的文件</p>
+<h2 id="管道命令"><a href="#管道命令" class="headerlink" title="管道命令 |"></a>管道命令 |</h2><blockquote>
+<p>find / -name hello* | grep ab<br>意思是找到hello开头的所有文件,然后在这些文件之中寻找有ab的,相当于两个命令</p>
+</blockquote>
+<h2 id="压缩与解压命令-tar"><a href="#压缩与解压命令-tar" class="headerlink" title="压缩与解压命令 tar"></a>压缩与解压命令 tar</h2><blockquote>
+<p>tar -czvf (压缩后的fileName) (压缩前的fileName)<br>tar -zxvf 被解压的文件</p>
+</blockquote>
+<h2 id="查看ip信息ifconfig"><a href="#查看ip信息ifconfig" class="headerlink" title="查看ip信息ifconfig"></a>查看ip信息ifconfig</h2><h2 id="service"><a href="#service" class="headerlink" title="service"></a>service</h2><p>开启防火墙service iptables start<br>关闭     …. stop</p>
+<h2 id="rpm-qa-grep-appName"><a href="#rpm-qa-grep-appName" class="headerlink" title="rpm -qa | grep appName"></a>rpm -qa | grep appName</h2><blockquote>
+<p>查看是否安装了指定软件 </p>
+</blockquote>
+<h2 id="rpm-e-–nodeps"><a href="#rpm-e-–nodeps" class="headerlink" title="rpm -e –nodeps"></a>rpm -e –nodeps</h2><blockquote>
+<p>卸载制定软件(依赖也卸载掉,与这个软件相关都卸载掉)</p>
+</blockquote>
+<h2 id="vi命令"><a href="#vi命令" class="headerlink" title="vi命令"></a>vi命令</h2><blockquote>
+<p>打开后需要改变状态才可以写东西<br>有三种状态,只读.编辑.命令状态<br><img src="https://s1.ax2x.com/2018/05/21/2HdpO.jpg"></p>
+</blockquote>
 
       
     </div>
@@ -487,7 +508,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Linux操作"><span class="nav-number">1.</span> <span class="nav-text">Linux操作</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#linux目录"><span class="nav-number">1.1.</span> <span class="nav-text">linux目录</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#start命令"><span class="nav-number">1.2.</span> <span class="nav-text">start命令</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#开启php环境"><span class="nav-number">1.3.</span> <span class="nav-text">开启php环境</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#设置文件的权限"><span class="nav-number">1.4.</span> <span class="nav-text">设置文件的权限</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#打开-sh文件"><span class="nav-number">1.5.</span> <span class="nav-text">打开.sh文件</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#图标右下角带锁的时候"><span class="nav-number">1.6.</span> <span class="nav-text">图标右下角带锁的时候</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#打开隐藏文件"><span class="nav-number">1.7.</span> <span class="nav-text">打开隐藏文件</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#su命令"><span class="nav-number">1.8.</span> <span class="nav-text">su命令</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#pwd"><span class="nav-number">1.9.</span> <span class="nav-text">pwd</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#mkdir"><span class="nav-number">1.10.</span> <span class="nav-text">mkdir</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#man"><span class="nav-number">1.11.</span> <span class="nav-text">man</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#touch"><span class="nav-number">1.12.</span> <span class="nav-text">touch</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#rm"><span class="nav-number">1.13.</span> <span class="nav-text">rm</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#top"><span class="nav-number">1.14.</span> <span class="nav-text">top</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Linux操作"><span class="nav-number">1.</span> <span class="nav-text">Linux操作</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#linux目录"><span class="nav-number">1.1.</span> <span class="nav-text">linux目录</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#start命令"><span class="nav-number">1.2.</span> <span class="nav-text">start命令</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#开启php环境"><span class="nav-number">1.3.</span> <span class="nav-text">开启php环境</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#设置文件的权限"><span class="nav-number">1.4.</span> <span class="nav-text">设置文件的权限</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#打开-sh文件"><span class="nav-number">1.5.</span> <span class="nav-text">打开.sh文件</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#图标右下角带锁的时候"><span class="nav-number">1.6.</span> <span class="nav-text">图标右下角带锁的时候</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#打开隐藏文件"><span class="nav-number">1.7.</span> <span class="nav-text">打开隐藏文件</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#su命令"><span class="nav-number">1.8.</span> <span class="nav-text">su命令</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#pwd"><span class="nav-number">1.9.</span> <span class="nav-text">pwd</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#mkdir"><span class="nav-number">1.10.</span> <span class="nav-text">mkdir</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#man"><span class="nav-number">1.11.</span> <span class="nav-text">man</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#touch"><span class="nav-number">1.12.</span> <span class="nav-text">touch</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#rm"><span class="nav-number">1.13.</span> <span class="nav-text">rm</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#top"><span class="nav-number">1.14.</span> <span class="nav-text">top</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#shutdown-关机-root账号才能操作"><span class="nav-number">1.15.</span> <span class="nav-text">shutdown 关机(root账号才能操作)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#reboot-重启-root账号才能操作"><span class="nav-number">1.16.</span> <span class="nav-text">reboot 重启(root账号才能操作)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#history"><span class="nav-number">1.17.</span> <span class="nav-text">history</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#find"><span class="nav-number">1.18.</span> <span class="nav-text">find</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#管道命令"><span class="nav-number">1.19.</span> <span class="nav-text">管道命令 |</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#压缩与解压命令-tar"><span class="nav-number">1.20.</span> <span class="nav-text">压缩与解压命令 tar</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#查看ip信息ifconfig"><span class="nav-number">1.21.</span> <span class="nav-text">查看ip信息ifconfig</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#service"><span class="nav-number">1.22.</span> <span class="nav-text">service</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#rpm-qa-grep-appName"><span class="nav-number">1.23.</span> <span class="nav-text">rpm -qa | grep appName</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#rpm-e-–nodeps"><span class="nav-number">1.24.</span> <span class="nav-text">rpm -e –nodeps</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#vi命令"><span class="nav-number">1.25.</span> <span class="nav-text">vi命令</span></a></li></ol></li></ol></div>
             
 
           </div>
